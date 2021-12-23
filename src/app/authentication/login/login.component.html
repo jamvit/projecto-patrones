@@ -1,0 +1,9 @@
+<input
+  type="text"
+  placeholder="Nombre de Usuario"
+  [(ngModel)]="auth.username"
+/>
+<br /><br />
+<input type="password" placeholder="Contrasenna" [(ngModel)]="auth.password" />
+<br /><br />
+<button (click)="onSubmit()">Ingresar</button>

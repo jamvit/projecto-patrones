@@ -1,0 +1,23 @@
+<div class="book">
+  <input type="text" placeholder="Nombre" [(ngModel)]="libro.nombre" />
+  <br /><br />
+  <input
+    type="number"
+    placeholder="Anno de Creaccion"
+    [(ngModel)]="libro.anoCreacion"
+  />
+  <br /><br />
+  <select [(ngModel)]="libro.genero">
+    <option *ngFor="let genero of generos; let i = index" [value]="genero">
+      {{ genero }}
+    </option>
+  </select>
+  <br /><br />
+  <select [(ngModel)]="autorSelect">
+    <option *ngFor="let autor of autoresCreados; let i = index" [value]="i">
+      {{ autor.nombre }}
+    </option>
+  </select>
+  <br /><br />
+  <button (click)="onSubmit()">Registrar Libro</button>
+</div>

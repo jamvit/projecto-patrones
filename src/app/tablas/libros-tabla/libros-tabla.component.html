@@ -1,0 +1,12 @@
+<div class="table-header">
+  <label>#</label>
+  <label>Nombre</label>
+  <label>Ano de Creaccion</label>
+  <label>Genero Literario</label>
+</div>
+<div class="table-row" *ngFor="let libro of libros; let i = index">
+  <label>{{ i }}</label>
+  <label>{{ libro.nombre }}</label>
+  <label>{{ libro.anoCreacion }}</label>
+  <label>{{ libro.genero }}</label>
+</div>
